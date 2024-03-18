@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandra Ramirez</title>
+    <title>Sandra's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/dino.png" type="image/icon type">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="img/SandraRamirez.png" alt="Logo picture with my name Sandra Ramirez">
-        FULL STACK WEB DEVELOPER
+        <div class="headerContainer">
+        <img src="img/SandraRamirez.png" alt="Logo picture with my name Sandra Ramirez" title="Sandra Ramirez">
+        <p class="pHeader">FULL STACK WEB DEVELOPER</p>
+        </div>
     </header>
 
         <nav>
@@ -23,60 +26,93 @@
 
     <main>
         <section id="aboutSection">
-            <p class="titles"><img src="img/caret.svg" alt="" class="blinkVector">PLAYER 1</p>
+            <p class="titles"><img src="img/caret.svg" alt="Icon of an arrow pointing to the right" class="blinkVector">PLAYER 1</p>
             <p class="ready">READY</p>
             <div class="infoContainer">
-                <img src="img/finalusercard.png" alt="" id="user">
+                <div class="user">
+                    <div class="card">
+                    <div class="image">
+                        <img src="img/download20240303130334.png" alt="Avatar of myself in Pixel Art" id="user">
+                    </div>
+                    <div class="softSkills">
+                        <div class="skillName"><div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <p class="pSkills">ADAPTABILITY</p>
+                        </div>
+                        <div class="skillName">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <p class="pSkills">PROBLEM-SOLVING</p>
+                        </div>
+                        <div class="skillName">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <p class="pSkills">CREATIVITY</p>
+                        </div>
+                        <div class="skillName">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <p class="pSkills">TEAMWORK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <div class="info"> 
                     <p><h2>Hi, I'm <b class="sandra">Sandra</b>👋</h2></p>
-                    <p>✨A passionate learner and aspiring web developer with a background in <b class="yellow">linguistics</b> and a love for <b class="yellow">gaming👾</b>. (Can you tell?)</p><br>
+                    <p>✨A passionate learner and aspiring web developer with a background in <b class="yellowText">linguistics</b> and a love for <b class="yellowText">gaming. 👾</b> (Can you tell?)</p><br>
                     <p>I'm currently diving into the world of web development, where I'm actively exploring various programming languages and frameworks</p><br>
-                    <p>With experience as a <b class="yellow">translator</b> and <b class="yellow">language teacher</b> I bring a unique perspective to coding, blending my linguistic skills with the logic of programming.</p><br>
+                    <p>With experience as a <b class="yellowText">translator</b> and <b class="yellowText">language teacher</b> I bring a unique perspective to coding, blending my linguistic skills with the logic of programming.</p><br>
                     <p>When I'm not coding, you can find me gaming, traveling or trying out new recipes.</p>
                 </div>
             </div>
         </section>
 
         <section id="skillsSection">
-            <p class="titles"><img src="img/caret.svg" alt="" class="blinkVector">SKILLS</p>
+            <p class="titles"><img src="img/caret.svg" alt="Icon of an arrow pointing to the right" class="blinkVector">SKILLS</p>
             <div class="skillsLogos">
                     <div class="skillsFirst">
-                        <img src="img/pixelhtml.png" alt="" class="logo">
-                        <img src="img/pixelcss.png" alt="" class="logo">
-                        <img src="img/pixeljs.png" alt="" class="logo">
+                        <img src="img/pixelhtml.png" alt="Logo of HTML" class="logo" title="HTML">
+                        <img src="img/pixelcss.png" alt="Logo of CSS" class="logo" title="CSS">
+                        <img src="img/pixeljs.png" alt="Logo of Javascript" class="logo" title="Javascript">
                     </div>
                     <div class="skillSecond">
-                        <img src="img/node.png" alt="" class="logo">
-                        <img src="img/angular.png" alt="" class="logo">
-                        <img src="img/vue.png" alt="" class="logo">
-                        <img src="img/gulp.png" alt="" class="logo">
+                        <img src="img/node.png" alt="Logo of Node.js" class="logo" title="Node.js">
+                        <img src="img/angular.png" alt="Logo of Angular" class="logo" title="Angular">
+                        <img src="img/vue.png" alt="Logo of Vue" class="logo" title="Vue">
+                        <img src="img/gulp.png" alt="Logo of Gulp" class="logo" title="Gulp">
                     </div>
                 </ul>
             </div>
         </section>
 
         <section id="projectsSection">
-            <p class="titles" id="titleProject"><img src="img/caret.svg" alt="" class="blinkVector">PROJECTS</p>
+            <p class="titles" id="titleProject"><img src="img/caret.svg" alt="Icon of an arrow pointing to the right" class="blinkVector">PROJECTS</p>
             <div class="projectsContainer">
-                <div class="projectOne"><img src="img/project.png" alt="" id="imageOne" class="projectImage"><p class="projectTextOne">COMING SOON!</p></div>
-                <div class="projectTwo"><img src="img/project.png" alt="" id="imgageTwo" class="projectImage"><p class="projectTextTwo">COMING SOON!</p></div>
-                <div class="projectThree"><img src="img/project.png" alt="" id="imageThree" class="projectImage"><p class="projectTextThree">COMING SOON!</p></div>
-                <div class="projectFour"><img src="img/project.png" alt="" id="imageFour" class="projectImage"><p class="projectTextFour">COMING SOON!</p></div>
-                <div class="projectFive"><img src="img/project.png" alt="" id="imageFive" class="projectImage"><p class="projectTextFive">COMING SOON!</p></div>
-                <div class="projectSix"><img src="img/project.png" alt="" id="imageSix" class="projectImage"><p class="projectTextSix">COMING SOON!</p></div>
-                <div class="projectSeven"><img src="img/project.png" alt="" id="imageSeven" class="projectImage"><p class="projectTextSeven">COMING SOON!</p></div>
-                <div class="projectEight"><img src="img/project.png" alt="" id="imageEight" class="projectImage"><p class="projectTextEight">COMING SOON!</p></div>
+                <div class="projectOne"><img src="img/project.png" alt="Picture of project not found" id="imageOne" class="projectImage" title="Project"><p class="projectTextOne">⚠️COMING SOON!</p></div>
+                <div class="projectTwo"><img src="img/project.png" alt="Picture of project not found" id="imgageTwo" class="projectImage" title="Project"><p class="projectTextTwo">⚠️COMING SOON!</p></div>
+                <div class="projectThree"><img src="img/project.png" alt="Picture of project not found" id="imageThree" class="projectImage" title="Project"><p class="projectTextThree">⚠️COMING SOON!</p></div>
+                <div class="projectFour"><img src="img/project.png" alt="Picture of project not found" id="imageFour" class="projectImage" title="Project"><p class="projectTextFour">⚠️COMING SOON!</p></div>
+                <div class="projectFive"><img src="img/project.png" alt="Picture of project not found" id="imageFive" class="projectImage" title="Project"><p class="projectTextFive">⚠️COMING SOON!</p></div>
+                <div class="projectSix"><img src="img/project.png" alt="Picture of project not found" id="imageSix" class="projectImage" title="Project"><p class="projectTextSix">⚠️COMING SOON!</p></div>
+                <div class="projectSeven"><img src="img/project.png" alt="Picture of project not found" id="imageSeven" class="projectImage" title="Project"><p class="projectTextSeven">⚠️COMING SOON!</p></div>
+                <div class="projectEight"><img src="img/project.png" alt="Picture of project not found" id="imageEight" class="projectImage" title="Project"><p class="projectTextEight">⚠️COMING SOON!</p></div>
             </div>
         </section>
 
-        <section id="contactSection"></section>
+        <section id="contactSection">
+        </section>
+        
     </main>
 
     <footer>
         Made with 💖 by Sandra Ramírez
         <div class="socials">
-        <a href="https://github.com/sandiaxcx"><img src="img/github.png" alt="" id="social"></a>
-        <a href="https://www.linkedin.com/in/sandraramirezpuente/"><img src="img/linked.png" alt="" id="social"></a></div>
+        <a href="https://github.com/sandiaxcx"><img src="img/github.png" alt="Logo of Github" id="social" title="Github"></a>
+        <a href="https://www.linkedin.com/in/sandraramirezpuente/"><img src="img/linked.png" alt="Logo of LinkedIn" id="social" title="LinkedIn"></a></div>
     </footer>
 </body>
 </html>
