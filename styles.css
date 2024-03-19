@@ -3,7 +3,6 @@
     25%, 75% { opacity: 0; }
 }
 
-
 body{
     background-color: black;
     display: flex;
@@ -16,22 +15,35 @@ body{
 }
 
 header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
     font-family: "Emulogic";
     color: #24C4FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
 }
 
 header img{
     width: 380px;
 }
 
+header p{
+    margin-top: -7px;
+}
 
 nav{
     font-size: 15px; 
+    width: 15vw;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .about, .skills, .projects, .contact {
@@ -39,9 +51,7 @@ nav{
     font-family: "Emulogic";
     text-align: center;
     margin-top: 2px;
-
 }
-
 
 .about:hover > p, .skills:hover > p, .projects:hover > p, .contact:hover > p {
     font-weight: bold;
@@ -76,22 +86,15 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-
-#user{
-    width: 250px;
-}
-
 
 .blinkVector{
     height: 22px;
     animation: blink 1.5s linear infinite;
     margin-right: 10px;
     margin-bottom: -3px;
-
-
 }
+
 #aboutSection{ 
     margin-top: 17em;
     display: flex;
@@ -128,6 +131,55 @@ main{
     font-size: 13px;
 }
 
+
+.softSkills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.yellow{
+    width: 15px;
+    height: 15px;
+    background-color: #ecc443;
+    margin-right: 4px;
+}
+
+.pSkills{
+    margin-top: 2px;
+    font-family: "Emulogic";
+    color: white;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+#user{
+    width: 150px;
+    height: 150px;
+    border: 5px white solid;
+    padding: 5px;
+}
+
+.image{
+    border: 5px white solid;
+    width: 175px;
+    height: 175px;
+    padding-top: 4px;
+    padding-left: 5px;
+    margin-top: 8px;
+}
+
+.card{
+    background-color: black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillName{
+    display: flex;
+}
+
 .sandra{
     color: #ecc443;
     font-family: monospace;
@@ -135,10 +187,10 @@ main{
 }
 
 h2 {
-font-family: monospace;
+    font-family: monospace;
 }
 
-.yellow{
+.yellowText{
     color: #ecc443;
     font-size: 14px;
 }
@@ -146,7 +198,6 @@ font-family: monospace;
 #user{
     margin-right: 70px;
 }
-
 
 #skillsSection{
     margin-top: 7em;
@@ -163,7 +214,6 @@ font-family: monospace;
     flex-direction: column;
     align-items: center;
 }
-
 
 .logo{
     height:50px;
@@ -214,21 +264,18 @@ font-family: monospace;
     flex-direction: column;
 }
 
-
 .projectOne:hover .projectTextOne, .projectTwo:hover .projectTextTwo, .projectThree:hover .projectTextThree, .projectFour:hover .projectTextFour, .projectFive:hover .projectTextFive, .projectSix:hover .projectTextSix, .projectSeven:hover .projectTextSeven, .projectEight:hover .projectTextEight{
     visibility: visible;
     opacity: 1;
     animation: blink 1.5s linear infinite;
 }
 
-
 .projectTextOne, .projectTextTwo, .projectTextThree, .projectTextFour, .projectTextFive, .projectTextSix, .projectTextSeven, .projectTextEight{
     opacity:0;
     font-family: monospace;
     background-color: red;
-    width: 90px;
+    width: 106px;
 }
-
 
 footer{
     display: flex;
@@ -241,12 +288,12 @@ footer{
     margin-top: 75px;
 }
 
-
 .socials{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
+
 #social{
     width:15px;
     margin-right: 10px;
