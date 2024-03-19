@@ -1,0 +1,300 @@
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/blackbg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+    background-position: absolute;
+}
+
+header{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "Emulogic";
+    color: #24C4FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+}
+
+header img{
+    width: 380px;
+}
+
+header p{
+    margin-top: -7px;
+}
+
+nav{
+    font-size: 15px; 
+    width: 15vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about, .skills, .projects, .contact {
+    color: white;
+    font-family: "Emulogic";
+    text-align: center;
+    margin-top: 2px;
+}
+
+.about:hover > p, .skills:hover > p, .projects:hover > p, .contact:hover > p {
+    font-weight: bold;
+    color: #ecc443;
+    cursor: pointer;
+}
+
+i{
+    opacity:0;
+}
+
+.about:hover > p > i, .skills:hover > p > i, .projects:hover > p > i, .contact:hover > p > i {
+    color: #ecc443;
+    margin-right: 15px;
+    font-size: 15px;
+    animation: blink 1s steps(2, end) infinite;
+    font-size: 20px;
+    opacity:1
+}
+
+a{
+    color: white;
+    text-decoration: none;
+} 
+
+a:hover{
+    color: #ecc443;
+}
+
+main{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blinkVector{
+    height: 22px;
+    animation: blink 1.5s linear infinite;
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
+
+#aboutSection{ 
+    margin-top: 17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55vw;
+}
+
+.titles{
+    font-family: "Emulogic";
+    font-size: 17px;
+    color: white;
+}
+
+.ready{
+    font-family: "Emulogic";
+    height: 20px;
+    color: rgb(198, 4, 4);
+    margin-top: 2px;
+}
+
+.infoContainer{
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    width: 55vw;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 2em;
+}
+
+.info{
+    font-size: 13px;
+}
+
+
+.softSkills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.yellow{
+    width: 15px;
+    height: 15px;
+    background-color: #ecc443;
+    margin-right: 4px;
+}
+
+.pSkills{
+    margin-top: 2px;
+    font-family: "Emulogic";
+    color: white;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+#user{
+    width: 150px;
+    height: 150px;
+    border: 5px white solid;
+    padding: 5px;
+}
+
+.image{
+    border: 5px white solid;
+    width: 175px;
+    height: 175px;
+    padding-top: 4px;
+    padding-left: 5px;
+    margin-top: 8px;
+}
+
+.card{
+    background-color: black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillName{
+    display: flex;
+}
+
+.sandra{
+    color: #ecc443;
+    font-family: monospace;
+    font-size: 26px;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+.yellowText{
+    color: #ecc443;
+    font-size: 14px;
+}
+
+#user{
+    margin-right: 70px;
+}
+
+#skillsSection{
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsLogos{
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    height:50px;
+    margin: 8px 8px 8px 8px;
+    transition: transform .5s ease-in-out;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+#titleProject{
+    color: white;
+    margin-bottom: 40px;
+}
+#projectsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 18em;
+}
+
+.projectsContainer{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 62vw;
+    flex-wrap: wrap;
+}
+
+.projectImage{
+    width: 170px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projectImage:hover{
+    transform: scale(1.1);
+}
+
+.projectOne, .projectTwo, .projectThree, .projectFour, .projectFive, .projectSix, .projectSeven, .projectEight{
+    position: relative;
+    width: 170px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectOne:hover .projectTextOne, .projectTwo:hover .projectTextTwo, .projectThree:hover .projectTextThree, .projectFour:hover .projectTextFour, .projectFive:hover .projectTextFive, .projectSix:hover .projectTextSix, .projectSeven:hover .projectTextSeven, .projectEight:hover .projectTextEight{
+    visibility: visible;
+    opacity: 1;
+    animation: blink 1.5s linear infinite;
+}
+
+.projectTextOne, .projectTextTwo, .projectTextThree, .projectTextFour, .projectTextFive, .projectTextSix, .projectTextSeven, .projectTextEight{
+    opacity:0;
+    font-family: monospace;
+    background-color: red;
+    width: 106px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 100px;
+    font-family: monospace;
+    margin-top: 75px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#social{
+    width:15px;
+    margin-right: 10px;
+}
